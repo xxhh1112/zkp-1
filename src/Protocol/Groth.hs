@@ -38,12 +38,12 @@ import Data.Field.Galois (pow)
 import qualified Data.Map as Map
 import Data.Pairing.BN254 (BN254, Fr, Pairing (..))
 import Data.Poly (VPoly, eval, monomial)
+import Data.Text.Prettyprint.Doc
 import Poly (secretEvalInExponent)
 import Protolude hiding (quotRem)
 import QAP
 import Test.QuickCheck (Arbitrary (..))
 import Test.QuickCheck.Arbitrary.Generic (genericArbitrary)
-import Text.PrettyPrint.Leijen.Text hiding ((<$>))
 
 -- | Random values in Z_p^* picked in the setup.
 data RandomSetup f
@@ -411,3 +411,6 @@ simulate RandomSimulator {..} QAP {..} Trapdoor {..} inps = Proof a b c
                 ux = (* trapdoorBeta) . flip eval trapdoorX <$> qapInputsLeft
                 vx = (* trapdoorAlpha) . flip eval trapdoorX <$> qapInputsRight
                 wx = flip eval trapdoorX <$> qapOutputs
+
+text :: Text -> Doc ann
+text = pretty

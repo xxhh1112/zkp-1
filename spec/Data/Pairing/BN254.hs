@@ -15,14 +15,10 @@ data BN254
 newtype Fr = P Natural
   deriving (Num)
 
-{-@ ignore Fr @-}
-instance Fractional Fr
-
 --instance Fractional Fr where
 --  recip = undefined
 
 class (Eq e) => Pairing e where
-
   {-# MINIMAL pairing #-}
 
   -- | Left group @G1@.
