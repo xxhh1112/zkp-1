@@ -90,8 +90,8 @@ executables:
       - Reference
     dependencies:
       - zkp
-      - galois-field
-      - optparse-applicative
+      - galois-field          >=1.0.0    && <1.1
+      - optparse-applicative  >=0.14.0.0 && <0.16
     ghc-options:
       - -Wall
       - -Wno-name-shadowing
