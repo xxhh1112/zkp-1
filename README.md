@@ -235,6 +235,7 @@ This proof system depends on the following dependencies.
 This program uses the Groth16 and Groth-Maller protocols, both of which are
 relatively new protocols only originating in 2016 and 2017.  While these
 protocols have been given extensive peer review, their use comes with the
-standard cryptography disclaimers. This protocol is also only secure under KEA1.
-This library has not undergone audit and is provided strictly without warranty
-and only for non-commercial use.
+standard cryptography disclaimers. This protocol is also only secure under KEA1
+and makes no security guarantees such as constant time implementation or
+side-channel attack resistance. This is provided strictly without warranty and
+only for non-commercial use.
