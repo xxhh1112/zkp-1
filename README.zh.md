@@ -111,13 +111,6 @@ Proof
 zkp verify -d setupdir --inputs samples/inputs1.json --pi proof
 ```
 
-<!-- Proof Servers -->
-## 数学证明服务器
-
-有多种证明服务，允许公共用户进行时间戳记并以数字方式签署零知识证明的输出。 Adjoint在此处托管公共证明服务器。
-
-[dragon.adjoint.io](https://adjoint-io.github.io/dragon-website/index_zh.html)
-
 <!-- Curves -->
 ## 椭圆曲线
 
