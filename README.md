@@ -239,3 +239,18 @@ standard cryptography disclaimers. This protocol is also only secure under KEA1
 and makes no security guarantees such as constant time implementation or
 side-channel attack resistance. This is provided strictly without warranty and
 only for non-commercial use.
+
+You are free to to use this work in academic research with no restrictions
+except for a citation to the repository.
+
+```
+@misc{Stephen2020,
+  author = {Stephen Diehl},
+  title = {ZKP Compiler},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/adjoint-io/zkp}},
+  commit = {4f6d08a541e31b87fa8b2a5ee7246ffde17dd361}
+}
+```
